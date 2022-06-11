@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --hover-blue: hsl(245, 83%, 68%);
+}
+
+body {
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-box {
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0.5rem;
+    padding: 1.3rem 0 0 0;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+p {
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--desaturated-blue);
+}
+.plans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem 0 1rem 0;
+    padding: 0 1rem;
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+}
+.plan-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-detail img {
+    width: 3rem;
+}
+.plan-detail p {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+.plan-detail p span {
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+.btn {
+    border: none;
+    background-color: transparent;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.change-btn {
+    color: var(--bright-blue);
+    text-decoration: underline;
+    padding: 0.1rem;
+}
+
+.change-btn:hover {
+    color: var(--hover-blue);
+    text-decoration: none;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.payment-btn {
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    border-radius: 15px;
+}
+.payment-btn:hover {
+    background-color: var(--hover-blue);
+}
+
+.cancel-btn {
+    color: var(--desaturated-blue);
+    background-color: transparent;
+    padding: 0.1rem;
+    margin: 1.5rem 0;
+}
+.cancel-btn:hover {
+    color: var(--Dark-blue);
+}
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
+
+@media screen and (min-width: 376px) {
+    body {
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-position: top;
+        background-size: 100% 47%;
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        width: 85%;
+        max-width: 400px;
+    }
+    .card-box {
+        padding: 0 2rem;
+    }
+}
